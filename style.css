@@ -1,6 +1,6 @@
 :root {
-    --color-blue: #3685FF;
-    --color-blue-shade: #2C7DFA;
+    --color-blue: #2C7DFA;
+    --color-blue-shade: #3685FF;
     --color-dark-navy: #1F314F;
     --color-grey: #7D889E;
     --color-light-grey: #D5E1EF;
@@ -31,7 +31,7 @@ body {
 }
 
 .qr-wrapper {
-    background-color: var(--color-blue);
+    background-color: var(--color-blue-shade);
     border-radius: 10px;
     padding-bottom: 100%;
     position: relative;
@@ -41,7 +41,7 @@ body {
 
 .qr-wrapper::before, .qr-wrapper::after {
     content: "";
-    background-color: var(--color-blue-shade);
+    background-color: var(--color-blue);
     position: absolute;
     border-radius: 100%;
     transition: background-color .5s ease;
@@ -98,8 +98,11 @@ body {
 }
 
 @media (min-width: 1440px) {
-    :root {
-        --color-blue: #2C7DFA;
-        --color-blue-shade: #3685FF;
+    .qr-wrapper {
+        background-color: var(--color-blue);
+    }
+
+    .qr-wrapper::before, .qr-wrapper::after {
+        background-color: var(--color-blue-shade);
     }
 }
