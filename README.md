@@ -17,6 +17,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 As this task is extremely simple, I decided to not use any frameworks, and have done it with simple HTML and CSS.
 
+Validations:
+
+- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fglebgorokhov.github.io%2Fqr%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+- 
+
 ## Author
 
 - Frontend Mentor - [@glebgorokhov](https://www.frontendmentor.io/profile/glebgorokhov)
