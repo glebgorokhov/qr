@@ -1,0 +1,105 @@
+:root {
+    --color-blue: #3685FF;
+    --color-blue-shade: #2C7DFA;
+    --color-dark-navy: #1F314F;
+    --color-grey: #7D889E;
+    --color-light-grey: #D5E1EF;
+    --color-white: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-light-grey);
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.card {
+    background-color: var(--color-white);
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    border-radius: 20px;
+    padding: 16px;
+    width: 320px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.qr-wrapper {
+    background-color: var(--color-blue);
+    border-radius: 10px;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .5s ease;
+}
+
+.qr-wrapper::before, .qr-wrapper::after {
+    content: "";
+    background-color: var(--color-blue-shade);
+    position: absolute;
+    border-radius: 100%;
+    transition: background-color .5s ease;
+}
+
+.qr-wrapper::before {
+    width: 113.88%;
+    height: 113.88%;
+    top: 0;
+    left: 11.6%;
+    transform: translate(-50%, -50%);
+}
+
+.qr-wrapper::after {
+    width: 93.75%;
+    height: 93.75%;
+    bottom: -17.88%;
+    right: 7.465%;
+    transform: translate(50%, 50%);
+}
+
+.qr-code {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: calc(100% - 32px);
+    max-height: calc(100% - 32px);
+    z-index: 1;
+}
+
+.content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2727;
+    color: var(--color-dark-navy);
+    margin: 0;
+}
+
+.text {
+    line-height: 1.2666;
+    letter-spacing: 0.0125em;
+    color: var(--color-grey);
+    margin: 16px 0 0;
+    padding: 0 16px;
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --color-blue: #2C7DFA;
+        --color-blue-shade: #3685FF;
+    }
+}
